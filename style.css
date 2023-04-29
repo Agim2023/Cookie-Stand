@@ -1,3 +1,38 @@
 header {
     text-align: center;
 }
+
+body {
+    background: hsla(279, 46%, 72%, 1);
+    background: linear-gradient(90deg, hsla(279, 46%, 72%, 1) 0%, hsla(196, 10%, 61%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(279, 46%, 72%, 1) 0%, hsla(196, 10%, 61%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(279, 46%, 72%, 1) 0%, hsla(196, 10%, 61%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#C196D8", endColorstr="#92A0A5", GradientType=1 );
+}
+
+img {
+    width: 300px;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Tangerine', serif;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: Merriweather, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+.section-box {
+    font-style: oblique;
+    color: rgb(41, 20, 41);
+}
+
+p {
+    font-size: x-large;
+}
