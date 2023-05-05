@@ -36,3 +36,15 @@ h2 {
 p {
     font-size: x-large;
 }
+
+.all-h1 {
+    color: lightgreen;
+}
+
+.berrypunch {
+    background-color: yellow;
+}
+
+#world {
+    background-color: brown;
+}

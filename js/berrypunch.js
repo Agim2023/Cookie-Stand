@@ -12,6 +12,6 @@ let shippingCost = 3.99
 
 let total =
 
-if (total > 3.99){
-   console.log(total);
+if  (total > 3.99){
+
 }
