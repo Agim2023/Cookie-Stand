@@ -29,7 +29,7 @@ let total = (subtotal + tax);
 
 alert(total);
 
-let discount1 = salesTax / 100 * price / discount;
+let discount1 = salesTax / 100 * price / 
 
 let discountedPrice1 = subtotal + tax + discountedPrice1;
 
