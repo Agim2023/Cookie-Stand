@@ -17,14 +17,34 @@ console.log(Store);
 
 
 //create a prototype inside the function loop through state.stores and loop through the hours 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min)
+}
 
+Store.prototype.render = function () {
+    let storeRow = document.createElement('tr');
 
+    let cityNameTD = document.createElement('td');
+    seattleNameTD.textContent = this.name;
+    storeRow.appendChild(cityNameTD);
+
+}
+
+Store.prototype.calcuate = function () {
+    for (let i = 0; i < 9; i++) {
+        let townXam = getRandomInt(this.min, this.max);
+        let totalXam = Math.round(this.avg * townXam);
+        console.log(this.name, totalXam);
+    }
+}
 
 let store = new Store("seattle", 23, 65, 6.3);
-let store2 = new Store("toyko", 23, 65, 6.3);
-let store3 = new Store("dubai", 23, 65, 6.3);
-let store4 = new Store("paris", 23, 65, 6.3);
-let store5 = new Store("lima", 23, 65, 6.3);
+let store2 = new Store("toyko", 3, 24, 1.2);
+let store3 = new Store("dubai", 11, 38, 3.7);
+let store4 = new Store("paris", 20, 38, 2.3);
+let store5 = new Store("lima", 2, 16, 4.8);
 //console.log(store, store2, store3, store4, store5);
 
 state.stores.push(store);
@@ -35,7 +55,11 @@ state.stores.push(store5);
 
 console.log(state.stores);
 
+for (let store of state.stores) {
+    store.calcuate();
+}
 
+console.log(state.stores);
 //Store.prototype.render = () {
     // /let storeRow = document.createElement('tr');
 
