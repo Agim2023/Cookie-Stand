@@ -12,6 +12,7 @@ function Store(name, min, max, avg) {
     this.min = min;
     this.max = max;
     this.avg = avg;
+    this.customers = []
 }
 console.log(Store);
 
@@ -36,6 +37,7 @@ Store.prototype.calcuate = function () {
     for (let i = 0; i < 9; i++) {
         let townXam = getRandomInt(this.min, this.max);
         let totalXam = Math.round(this.avg * townXam);
+        this.customers.push(totalXam);
         console.log(this.name, totalXam);
     }
 }
