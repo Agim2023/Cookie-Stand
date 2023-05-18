@@ -3,12 +3,12 @@
 let hours = 
    ['8am, 9am, 10am, 11am, 12noon, 1pm, 2pm, 3pm, 4pm']
    
-let customer = 0
+let customer = 0;
 
 let Location = "Seattle"
-let min = 23
-let max = 65
-let avg = 6.3
+let min = 23;
+let max = 65;
+let avg = 6.3;
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -80,9 +80,9 @@ console.log(Seattle4pm);
 console.log(Total4pm);
 
 let Location2 = "Toyko"
-let min2 = 3
-let max2 = 24
-let total2 = 1.2
+let min2 = 3;
+let max2 = 24;
+let total2 = 1.2;
 
 let Toyko8am = getRandomInt(min2, max2);
 let total8am = total2 * Toyko8am;
@@ -90,15 +90,16 @@ let total8am = total2 * Toyko8am;
 console.log(total8am);
 
 for (let i = 0; i < 9; i++) {
+
     console.log(getRandomInt(3, 24));
     console.log(Toyko8am);
     console.log(total2);
 }
 
 let Location3 = "Dubai"
-let min3 = 11
-let max3 = 38
-let total3 = 3.7
+let min3 = 11;
+let max3 = 38;
+let total3 = 3.7;
 
 let Dubai9am = getRandomInt(min2, max2);
 let total9am = total3 * Dubai9am;
@@ -106,15 +107,19 @@ let total9am = total3 * Dubai9am;
 console.log(total9am);
 
 for (let i = 0; i < 9; i++) {
-    console.log(getRandomInt(11, 38));
-    console.log(Dubai9am);
-    console.log(total3);
+    let DubaiXam = getRandomInt(min2, max2);
+    let totalXam = total3 * DubaiXam;
+    console.log("Dubai",totalXam);
+let parent = document.getElementById("dubai")
+let liElm = document.createElement("li")
+liElm.textContent = totalXam; //total for each hour
+parent.appendChild(liElm);
 } 
 
 let Location4 = "Paris"
-let min4 = 20
-let max4 = 38
-let total4 = 2.3
+let min4 = 20;
+let max4 = 38;
+let total4 = 2.3;
 
 let Paris10am = getRandomInt(min4, max4);
 let total10am = total4 * Paris10am;
@@ -142,3 +147,4 @@ for (let i = 0; i < 9; i++) {
     console.log(Lima11am);
     console.log(total5);
 }
+
