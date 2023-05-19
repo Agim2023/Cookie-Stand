@@ -28,8 +28,10 @@ Store.prototype.render = function () {
     let storeRow = document.createElement('tr');
 
     let cityNameTD = document.createElement('td');
-    seattleNameTD.textContent = this.name;
+    cityNameTD.textContent = this.name;
+    let tableElm = document.getElementById("tables");
     storeRow.appendChild(cityNameTD);
+    tableElm.appendChild(storeRow);
 
 }
 
@@ -47,7 +49,7 @@ let store2 = new Store("toyko", 3, 24, 1.2);
 let store3 = new Store("dubai", 11, 38, 3.7);
 let store4 = new Store("paris", 20, 38, 2.3);
 let store5 = new Store("lima", 2, 16, 4.8);
-//console.log(store, store2, store3, store4, store5);
+console.log(store, store2, store3, store4, store5);
 
 state.stores.push(store);
 state.stores.push(store2);
@@ -59,23 +61,24 @@ console.log(state.stores);
 
 for (let store of state.stores) {
     store.calcuate();
+    store.render();
 }
 
 console.log(state.stores);
 //Store.prototype.render = () {
-    // /let storeRow = document.createElement('tr');
+let storeRow = document.createElement('tr');
 
-    // let seattle = document.createElement('td');
-    // seattle.textContent = this.name;
-    // storeRow.appendChild(seattle);
+let seattle = document.createElement('td');
+seattle.textContent = this.name;
+storeRow.appendChild(seattle);
 
-    // let toyko= document.createElement('td');
-    // seattle.textContent = this.name;
-    // storeRow.appendChild(toyko);
+// let toyko= document.createElement('td');
+// seattle.textContent = this.name;
+// storeRow.appendChild(toyko);
 
-    // let dubai = document.createElement('td');
-    // seattle.textContent = this.name;
-    // storeRow.appendChild(dubai);
+// let dubai = document.createElement('td');
+// seattle.textContent = this.name;
+// storeRow.appendChild(dubai);
 
 //     let paris = document.createElement('td');
 //     seattle.textContent = this.name;
@@ -85,6 +88,6 @@ console.log(state.stores);
 //     seattle.textContent = this.name;
 //     storeRow.appendChild(lima);
 
-//     state.tableElm.appendChild(storeRow);
+state.tableElm.appendChild(storeRow);
 
 // }
