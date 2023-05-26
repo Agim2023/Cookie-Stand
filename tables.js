@@ -36,7 +36,7 @@ Store.prototype.render = function () {
     // We need the customers avg
     let hours1 = document.createElement('tr');
 
-
+    /// this for loop is for the customers each hour
     for (let i = 0; i < this.customers.length; i++) {
         let CustTD = document.createElement('td');
         CustTD.textContent = this.customers[i];
