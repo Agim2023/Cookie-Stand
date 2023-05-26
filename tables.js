@@ -37,12 +37,13 @@ Store.prototype.render = function () {
     let hours1 = document.createElement('tr');
 
 
-    let city2NameTD = document.createElement('td');
-    city2NameTD.textContent = this.customers;
-    let table2Elm = document.getElementById("tables");
-    storeRow.appendChild(city2NameTD);
-    table2Elm.appendChild(hours1);
-
+    for (let i = 0; i < this.customers.length; i++) {
+        let CustTD = document.createElement('td');
+        CustTD.textContent = this.customers[i];
+        let table2Elm = document.getElementById("tables");
+        storeRow.appendChild(CustTD);
+        table2Elm.appendChild(hours1);
+    }
 }
 
 // show a row for the hours per city
