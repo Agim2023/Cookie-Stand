@@ -32,7 +32,27 @@ Store.prototype.render = function () {
     let tableElm = document.getElementById("tables");
     storeRow.appendChild(cityNameTD);
     tableElm.appendChild(storeRow);
+    // We have the names of the cities
+    // We need the customers avg
+    let hours1 = document.createElement('tr');
 
+
+    let city2NameTD = document.createElement('td');
+    city2NameTD.textContent = this.customers;
+    let table2Elm = document.getElementById("tables");
+    storeRow.appendChild(city2NameTD);
+    table2Elm.appendChild(hours1);
+
+}
+
+// show a row for the hours per city
+for (let i = 0; i < hours.length; i++) {
+    let hoursNameTD = document.createElement('td');
+    let table2Elm = document.getElementById("tables");
+    hoursNameTD.textContent = hours;
+    table2Elm.appendChild(hoursNameTD);
+
+    console.log(hours[i]);
 }
 
 Store.prototype.calcuate = function () {
@@ -62,23 +82,25 @@ console.log(state.stores);
 for (let store of state.stores) {
     store.calcuate();
     store.render();
+
 }
 
 console.log(state.stores);
-//Store.prototype.render = () {
-let storeRow = document.createElement('tr');
+// Store.prototype.render = () {
 
-let seattle = document.createElement('td');
-seattle.textContent = this.name;
-storeRow.appendChild(seattle);
+//     let storeRow = document.createElement('tr');
 
-// let toyko= document.createElement('td');
-// seattle.textContent = this.name;
-// storeRow.appendChild(toyko);
+//     let seattle = document.createElement('td');
+//     seattle.textContent = this.name;
+//     storeRow.appendChild(seattle);
 
-// let dubai = document.createElement('td');
-// seattle.textContent = this.name;
-// storeRow.appendChild(dubai);
+//     let toyko = document.createElement('td');
+//     seattle.textContent = this.name;
+//     storeRow.appendChild(toyko);
+
+//     let dubai = document.createElement('td');
+//     seattle.textContent = this.name;
+//     storeRow.appendChild(dubai);
 
 //     let paris = document.createElement('td');
 //     seattle.textContent = this.name;
@@ -88,6 +110,6 @@ storeRow.appendChild(seattle);
 //     seattle.textContent = this.name;
 //     storeRow.appendChild(lima);
 
-state.tableElm.appendChild(storeRow);
+//     state.tableElm.appendChild(storeRow);
 
 // }
