@@ -49,7 +49,7 @@ Store.prototype.render = function () {
 for (let i = 0; i < hours.length; i++) {
     let hoursNameTD = document.createElement('td');
     let table2Elm = document.getElementById("tables");
-    hoursNameTD.textContent = hours;
+    hoursNameTD.textContent = hours[i];
     table2Elm.appendChild(hoursNameTD);
 
     console.log(hours[i]);
