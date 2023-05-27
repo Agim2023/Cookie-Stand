@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Sales</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Sales Page</h1>
+      <h1>Sales Page</h1>
+      <form id="sales-form">
+        <label for="name">Stores</label>
+        <input id="name" name="name" type="number" />
+        <label for="min">Min</label>
+        <input id="name" name="" type="number" />
+        <label for="max">Max</label>
+        <input id="name" name="max" type="number" />
+        <label for="Avg">Avg</label>
+        <input id="name" name="avg" type="number" />
+        <button type="submit">Submit</button>
+      </form>
     </header>
     <main>
-        <div id="Sales Page"></div>
-        <div id="seattle"></div>
+      <div id="Sales Page"></div>
+      <div id="seattle"></div>
     </main>
     <script src="app.js"></script>
-</body>
+    <script src="tables.js"></script>
+  </body>
 </html>
