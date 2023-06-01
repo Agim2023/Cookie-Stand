@@ -87,30 +87,4 @@ for (let store of state.stores) {
 }
 
 console.log(state.stores);
-// Store.prototype.render = () {
 
-//     let storeRow = document.createElement('tr');
-
-//     let seattle = document.createElement('td');
-//     seattle.textContent = this.name;
-//     storeRow.appendChild(seattle);
-
-//     let toyko = document.createElement('td');
-//     seattle.textContent = this.name;
-//     storeRow.appendChild(toyko);
-
-//     let dubai = document.createElement('td');
-//     seattle.textContent = this.name;
-//     storeRow.appendChild(dubai);
-
-//     let paris = document.createElement('td');
-//     seattle.textContent = this.name;
-//     storeRow.appendChild(paris);
-
-//     let lima = document.createElement('td');
-//     seattle.textContent = this.name;
-//     storeRow.appendChild(lima);
-
-//     state.tableElm.appendChild(storeRow);
-
-// }

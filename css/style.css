@@ -53,10 +53,19 @@ p {
   color: lightgreen;
 }
 
-.berrypunch {
+#berry-1 {
   background-color: yellow;
+  width: 300px;
 }
 
 #world {
   background-color: brown;
+}
+
+#oreo-1 {
+  width: 300px;
+}
+
+#supergreen-1 {
+  width: 300px;
 }
