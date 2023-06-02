@@ -3,9 +3,45 @@
 let hours = 
    ['8am', '9am', '10am', '11am', '12noon', '1pm', '2pm', '3pm', '4pm']
    
-let customer = 0;
+let stores = [
+    {
+        store: "Seattle",
+        min: 23,
+        max: 65, 
+        avg: 6.3,
+        salesPerHour: []
+    },
+    {
+        store: "Tokyo",
+        min2: 3,
+        max2: 24, 
+        total2: 1.2,
+        salesPerHour: []
+    },
+    {
+        store: "Dubai",
+        min3: 11,
+        max3: 38, 
+        total3: 3.7,
+        salesPerHour: []
+    },
+    {
+        store: "Paris",
+        min: 20,
+        max: 38, 
+        avg: 2.3,
+        salesPerHour: []
+    },
+    {
+        store: "Lima",
+        min: 2,
+        max: 16, 
+        avg: 4.6,
+        salesPerHour: []
+    }
+]
 
-let Location = "Seattle"
+let Location = 'Seattle'
 let min = 23;
 let max = 65;
 let avg = 6.3;
